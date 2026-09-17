@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "taxfix-future",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-lc",
+        "cd /Users/the_pythor/Desktop/taxfix/taxfix-future && source ~/.nvm/nvm.sh && nvm use 22 >/dev/null && npm run dev"
+      ],
+      "port": 3000
+    }
+  ]
+}
