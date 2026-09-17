@@ -96,7 +96,7 @@ export function FutureGraph({ baseline, scenario, height = 220 }: FutureGraphPro
           <Area
             type="monotone"
             dataKey="baseline"
-            stroke={scenario ? "#9aa596" : "var(--brand-dark)"}
+            stroke={scenario ? "#9aa596" : "var(--brand)"}
             strokeWidth={scenario ? 2 : 3}
             fill="url(#baselineFill)"
             isAnimationActive
@@ -106,7 +106,7 @@ export function FutureGraph({ baseline, scenario, height = 220 }: FutureGraphPro
             <Area
               type="monotone"
               dataKey="scenario"
-              stroke="var(--brand-dark)"
+              stroke="var(--brand)"
               strokeWidth={3}
               fill="url(#scenarioFill)"
               isAnimationActive

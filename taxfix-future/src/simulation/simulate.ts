@@ -54,7 +54,10 @@ export function simulate(profile: UserProfile, changes?: ScenarioChanges): Simul
 
   const housing = p.monthlyRent * 12;
   const expenses = p.monthlyExpenses * 12;
-  const disposable = net - housing - expenses - oneOffCost;
+  // CLAUDE.md's calibration table defines disposable income as net minus rent only
+  // (e.g. 43,776 - 15,000 = 28,776) — living expenses are reported separately in the
+  // breakdown but are not netted out of this headline figure.
+  const disposable = net - housing - oneOffCost;
 
   const projection = project(p.savings, disposable, 5, 2026);
 

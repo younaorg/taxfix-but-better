@@ -76,6 +76,7 @@ export function LifePrompt() {
     <div>
       <div className="flex items-end gap-2 rounded-[var(--radius-lg)] border border-black/10 bg-white p-2 pl-4 shadow-[0_1px_0_rgba(0,0,0,0.04)] focus-within:border-[var(--brand-dark)]">
         <textarea
+          id="life-prompt"
           value={text}
           onChange={(e) => setText(e.target.value)}
           onKeyDown={(e) => {

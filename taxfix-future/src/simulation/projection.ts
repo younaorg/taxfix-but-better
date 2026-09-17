@@ -13,7 +13,7 @@ export function project(
 ): YearSnapshot[] {
   const snapshots: YearSnapshot[] = [];
   let savings = startSavings;
-  for (let i = 0; i <= years; i++) {
+  for (let i = 0; i < years; i++) {
     if (i > 0) {
       savings = savings * (1 + annualReturnRate) + annualDisposable;
     }
