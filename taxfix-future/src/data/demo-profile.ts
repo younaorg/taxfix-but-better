@@ -16,3 +16,6 @@ export const ALEX: UserProfile = {
   churchTax: false,
   taxYear: 2026,
 };
+
+// Alias for src/store.ts and the API routes, which were built against this name.
+export const ALEX_PROFILE = ALEX;
